@@ -4,21 +4,24 @@ import android.app.Application
 import android.content.Context
 import com.wdb.component_lib.core.AppDelegate
 
-class ComponentApplication {
+open class ComponentApplication : Application() {
     private var appDelegate: AppDelegate? = null
 
-    fun onCreate(application: Application) {
-        appDelegate?.onCreate(application)
+    override fun onCreate() {
+        super.onCreate()
+        appDelegate?.onCreate(this)
     }
 
-    fun attachBaseContext(base: Context) {
+    override fun attachBaseContext(base: Context) {
+        super.attachBaseContext(base)
         if (appDelegate == null) {
             appDelegate = AppDelegate(base)
         }
         appDelegate?.attachBaseContext(base)
     }
 
-    fun onTerminate(application: Application) {
-        appDelegate?.onTerminate(application)
+    override fun onTerminate() {
+        super.onTerminate()
+        appDelegate?.onTerminate(this)
     }
 }

@@ -4,7 +4,7 @@ import android.app.Application
 import android.content.Context
 import com.wdb.component_lib.core.AppDelegate
 
-class MyApplication:Application() {
+class MyApplication : Application() {
     private var appDelegate: AppDelegate? = null
 
     override fun onCreate() {
