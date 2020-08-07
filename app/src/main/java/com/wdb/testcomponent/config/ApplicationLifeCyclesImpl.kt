@@ -3,7 +3,7 @@ package com.wdb.testcomponent.config
 import android.app.Application
 import android.content.Context
 import android.util.Log
-import com.wdb.component_lib.core.AppLifeCycles
+import com.wdb.module_lib.core.AppLifeCycles
 
 internal class ApplicationLifeCyclesImpl : AppLifeCycles {
     override fun attachBaseContext(base: Context) {

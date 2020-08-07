@@ -1,4 +1,4 @@
-package com.wdb.component_lib.config
+package com.wdb.module_lib.config
 
 import android.app.Activity
 import android.app.Application

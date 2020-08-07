@@ -1,7 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-kapt'
 
 group = 'com.github.banketree'
 
@@ -30,14 +29,9 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
+    implementation dependence["appcompat"]
     implementation dependence["kotlin-stdlib-jdk7"]
     api dependence["core-ktx"]
-
-    //dagger
-    api dependence["dagger2"]
-    api dependence["dagger2-android"]
-    api dependence["dagger2-android-support"]
-    kapt dependence["dagger2-compiler"]
 }
 
 repositories {

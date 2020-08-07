@@ -2,7 +2,7 @@ package com.wdb.testcomponent
 
 import android.app.Application
 import android.content.Context
-import com.wdb.component_lib.core.AppDelegate
+import com.wdb.module_lib.core.AppDelegate
 
 class MyApplication : Application() {
     private var appDelegate: AppDelegate? = null

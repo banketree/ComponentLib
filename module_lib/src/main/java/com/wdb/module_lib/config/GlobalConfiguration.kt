@@ -1,10 +1,10 @@
-package com.wdb.component_lib.config
+package com.wdb.module_lib.config
 
 import android.app.Application
 import android.content.Context
 import androidx.fragment.app.FragmentManager
-import com.wdb.component_lib.core.AppLifeCycles
-import com.wdb.component_lib.core.ConfigModule
+import com.wdb.module_lib.core.AppLifeCycles
+import com.wdb.module_lib.core.ConfigModule
 
 class GlobalConfiguration : ConfigModule {
 

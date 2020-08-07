@@ -1,8 +1,8 @@
-package com.wdb.component_lib
+package com.wdb.module_lib
 
 import android.app.Application
 import android.content.Context
-import com.wdb.component_lib.core.AppDelegate
+import com.wdb.module_lib.core.AppDelegate
 
 open class ComponentApplication : Application() {
     private var appDelegate: AppDelegate? = null

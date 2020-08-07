@@ -19,3 +19,6 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+#模块化
+-keep public class * implements com.wdb.module_lib.core.ConfigModule

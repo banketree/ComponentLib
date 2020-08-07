@@ -1,4 +1,4 @@
-package com.wdb.component_lib.config
+package com.wdb.module_lib.config
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
